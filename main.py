@@ -110,7 +110,7 @@ def get_code(location):
 
 
 # 登录
-def login(user, password):
+def login(17834141086, qw123456):
     is_phone = False
     if re.match(r'\d{11}', user):
         is_phone = True
@@ -178,14 +178,14 @@ def login(user, password):
 
 # 主函数
 def main(_user, _passwd, min_1, max_1):
-    user = str(_user)
-    password = str(_passwd)
+    user = str(_17834141086)
+    password = str(qw123456)
     step = str(random.randint(min_1, max_1))
     print("已设置为随机步数(" + str(min_1) + "~" + str(max_1) + ")")
     if user == '' or password == '':
         print("用户名或密码填写有误！")
         return
-    login_token, userid = login(user, password)
+    login_token, userid = login(17834141086, qw123456)
     if login_token == 0:
         print("登陆失败！")
         return "login fail!"
